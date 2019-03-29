@@ -25,7 +25,7 @@ Hypothesis function: y = mx + b So, the hypothesis function depends on the value
 
 9. So, for Ridge regression we use the below Cost function.
 
-    Cost Function: MSE + λ*||W||²
+    Cost Function: MSE + λ * (Sum of the squares of the weights)
     
     Note:
     1. MSE - Mean Square Error
