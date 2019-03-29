@@ -117,7 +117,7 @@ plot.scatter(featuresForTraining, labelForTraining, color= 'green', marker='+')
 #Scatter plot the test dataset
 plot.scatter(featuresForTesting, labelForTesting, color= 'blue', marker='+')
 #Plot the regression line
-plot.plot(featuresForTesting, pred, color = 'red')
+plot.plot(featuresForTesting, predictionsFromRidgeRegression, color = 'red')
 plot.title ("Visuals for Ridge Regression")
 plot.xlabel("Marketing Via TV")
 plot.ylabel("Sales")
@@ -141,7 +141,7 @@ print ("Linear Regression - Mean squared error: ",
        mean_squared_error(labelForTesting, predictionFromLinearRegression))
 #Finding out the accuracy of the model
 from sklearn.metrics import r2_score
-accuracyMeassure = r2_score(labelForTesting, pred)
+accuracyMeassure = r2_score(labelForTesting, predictionFromLinearRegression)
 print ("Linear Regression - Accuracy of model is {} %".format(accuracyMeassure*100))
 
 #Visualizing the training Test Results 
@@ -150,7 +150,7 @@ plot.scatter(featuresForTraining, labelForTraining, color= 'green', marker='+')
 #Scatter plot the test dataset
 plot.scatter(featuresForTesting, labelForTesting, color= 'blue', marker='+')
 #Plot the regression line
-plot.plot(featuresForTesting, pred, color = 'red')
+plot.plot(featuresForTesting, predictionFromLinearRegression, color = 'red')
 plot.title ("Visuals for Linear Regression with single feature")
 plot.xlabel("Marketing Via TV")
 plot.ylabel("Sales")
