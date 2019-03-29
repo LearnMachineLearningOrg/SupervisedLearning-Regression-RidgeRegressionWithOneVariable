@@ -29,7 +29,6 @@ Hypothesis function: y = mx + b So, the hypothesis function depends on the value
     
     Note:
     1. MSE - Mean Square Error
-    2. W - Coefficients
-    3. λ here is a tuning parameter to balance the fit of data and magnitude of coefficients.
+    2. λ here is a tuning parameter to balance the fit of data and magnitude of coefficients.
 
 10. The process of finding λ value is kind of brute force. But with smart guesses and experience, iterations to guess λ value can be reduced.
